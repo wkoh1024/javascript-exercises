@@ -7,15 +7,13 @@ const subtract = function(num, num1) {
 };
 
 const sum = function(numArray) {
-  if (numArray.length === 0) return 0;
 	return numArray.reduce((accumulator, currentValue) => 
-  {return accumulator + currentValue});
+  accumulator + currentValue, 0);
 };
 
 const multiply = function(numArray) {
-  if (numArray.length === 0) return 0;
   return numArray.reduce((accumulator, currentValue) => 
-    {return accumulator * currentValue});
+    accumulator * currentValue);
 };
 
 const power = function(num, num1) {
